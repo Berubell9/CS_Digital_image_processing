@@ -96,6 +96,7 @@ class ImageManager:
         
         global data
         
+        
         # self.convertToGrayscale()
         data_zeropaded = np.zeros([width + se.width * 2, height + se.height * 2, 3])
         data_zeropaded[se.width - 1:width + se.width - 1, se.height - 1:height + se.height - 1, :] = data
@@ -188,3 +189,4 @@ class StructuringElement:
         
         # print("%s %s %s %s" % (self.width, self.height, self.origin, self.elements))
         
+   
